@@ -14,23 +14,17 @@ public class Gameboard {
     public Gameboard() {
         this.chanceCards = new ArrayList<>();
         this.communityChestCards = new ArrayList<>();
-
     }
 
-    public void shuffleChanceCards() {
-        // shuffle the chance cards
-    }
-
-    public void shuffleCommunityChestCards() {
-        // shuffle the community chest cards
-    }
 
     public void placeChanceCard(ChanceCards card) {
-        // place the chance card on the bottom of the deck
+
     }
 
     public void placeCommunityChestCard(CommunityChestCards card) {
         // place the community chest card on the bottom of the deck
+
+
     }
 
     public void assignTokens() {

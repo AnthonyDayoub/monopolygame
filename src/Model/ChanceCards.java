@@ -6,27 +6,26 @@ import java.util.Random;
 
 public class ChanceCards {
 
-    private final String description;
-    private final int effect;
+    private final String chanceDescription;
+    private final int chanceEffect;
     public ArrayList<ChanceCards> chanceCards = new ArrayList<ChanceCards>();
     public Random random = new Random();
 
     public ChanceCards(String description, int effect) {
-        this.description = description;
-        this.effect = effect;
+        this.chanceDescription = description;
+        this.chanceEffect = effect;
     }
 
-    public String getDescription() {
-        return description;
+    public String getChanceDescription() {
+        return chanceDescription;
     }
 
-    public int getEffect() {
-        return effect;
+    public int getChanceEffect() {
+        return chanceEffect;
     }
 
     public void applyEffect(Player player) {
-        // apply the effect of the card
-        player.updateBalance(effect);
+        player.updateBalance(chanceEffect);
     }
 
   public void ChanceDeck() {
@@ -48,7 +47,7 @@ public class ChanceCards {
 }
 
     public String drawCard() {
-        return chanceCards.get(random.nextInt(chanceCards.size())).getDescription();
+        return chanceCards.get(random.nextInt(chanceCards.size())).getChanceDescription();
     }
 
 
