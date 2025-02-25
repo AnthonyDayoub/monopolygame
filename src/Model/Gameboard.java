@@ -1,14 +1,8 @@
 package Model;
 
-import Model.ChanceCards;
-import Model.CommunityChestCards;
-import Model.Player;
-import src.Model.BoardSquare;
-import Model.Property;
-import Model.Railroad;
-import src.Model.Utility;
-import src.Model.BoardSquare;
 
+
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,11 +20,36 @@ public class Gameboard {
 
 
     private void initializeBoard() {
-        squares.add(new Property("Mediterranean Avenue", 60, 2, "Brown"));
-        squares.add(new Railroad("Reading Railroad", 200, 25));
-        squares.add(new Utility("Electric Company", 150));
-        squares.add(new Property("Boardwalk", 400, 50, "Blue"));
-        // Add other properties, railroads, utilities, and special squares
+        squares.add(new Property("Mediterranean Avenue", new Color(58, 6, 6)));
+        squares.add(new Property("Baltic Avenue", new Color(58, 6, 6)));
+        squares.add(new Property("Oriental Avenue", new Color(3, 255, 255)));
+        squares.add(new Property("Vermont Avenue", new Color(3, 255, 255)));
+        squares.add(new Property("Connecticut Avenue", new Color(3, 255, 255)));
+        squares.add(new Property("St. Charles Place", Color.PINK));
+        squares.add(new Property("States Avenue", Color.PINK));
+        squares.add(new Property("Virginia Avenue", Color.PINK));
+        squares.add(new Property("St. James Place", Color.ORANGE));
+        squares.add(new Property("Tennessee Avenue", Color.ORANGE));
+        squares.add(new Property("New York Avenue", Color.ORANGE));
+        squares.add(new Property("Kentucky Avenue", Color.RED));
+        squares.add(new Property("Indiana Avenue", Color.RED));
+        squares.add(new Property("Illinois Avenue", Color.RED));
+        squares.add(new Property("Atlantic Avenue", Color.YELLOW));
+        squares.add(new Property("Ventnor Avenue", Color.YELLOW));
+        squares.add(new Property("Marvin Gardens", Color.YELLOW));
+        squares.add(new Property("Pacific Avenue", Color.GREEN));
+        squares.add(new Property("North Carolina Avenue", Color.GREEN));
+        squares.add(new Property("Pennsylvania Avenue", Color.GREEN));
+        squares.add(new Property("Park Place", new Color(16, 41, 166)));
+        squares.add(new Property("Boardwalk", new Color(16, 41, 166)));
+        squares.add(new Utility("Electric Company"));
+        squares.add(new Utility("Water Works"));
+        squares.add(new Railroad("Reading Railroad"));
+        squares.add(new Railroad("Pennsylvania Railroad"));
+        squares.add(new Railroad("B&O Railroad"));
+        squares.add(new Railroad("Short Line"));
+
+
     }
 
 

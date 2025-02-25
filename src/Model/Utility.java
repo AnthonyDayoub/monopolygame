@@ -1,12 +1,9 @@
 package Model;
 
-public class Utility extends src.Model.BoardSquare {
-    private int price;
+public class Utility extends BoardSquare { ;
 
-    public Utility(String name, int price) {
+    public Utility(String name) {
         super(name);
-        this.price = price;
     }
 
-    public int getPrice() { return price; }
 }
