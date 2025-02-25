@@ -17,4 +17,10 @@ public class Player {
     public int getBalance() {
         return balance;
     }
+
+    public void buyProperty(Property titleDeedCards) {
+    }
+
+    public void payRent(Player owner, Property titleDeedCards) {
+    }
 }
