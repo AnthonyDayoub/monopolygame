@@ -1,6 +1,6 @@
-package src.Model;
+package Model;
 
-public class Railroad extends BoardSquare {
+public class Railroad extends src.Model.BoardSquare {
     private int price;
     private int baseRent;
 

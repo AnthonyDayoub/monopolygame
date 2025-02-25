@@ -1,6 +1,6 @@
-package src.Model;
+package Model;
 
-public class Utility extends BoardSquare {
+public class Utility extends src.Model.BoardSquare {
     private int price;
 
     public Utility(String name, int price) {

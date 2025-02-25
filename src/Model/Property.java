@@ -1,6 +1,6 @@
-package src.Model;
+package Model;
 
-public class Property extends BoardSquare {
+public class Property extends src.Model.BoardSquare {
     private int price;
     private int rent;
     private String color;

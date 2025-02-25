@@ -4,8 +4,8 @@ import Model.ChanceCards;
 import Model.CommunityChestCards;
 import Model.Player;
 import src.Model.BoardSquare;
-import src.Model.Property;
-import src.Model.Railroad;
+import Model.Property;
+import Model.Railroad;
 import src.Model.Utility;
 import src.Model.BoardSquare;
 
