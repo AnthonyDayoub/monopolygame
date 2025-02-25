@@ -1,8 +1,18 @@
-package Model;
-
-import java.awt.*;
+package src.Model;
 
 public class Property extends BoardSquare {
-    private String name;
-    private Color color;
+    private int price;
+    private int rent;
+    private String color;
+
+    public Property(String name, int price, int rent, String color) {
+        super(name);
+        this.price = price;
+        this.rent = rent;
+        this.color = color;
+    }
+
+    public int getPrice() { return price; }
+    public int getRent() { return rent; }
+    public String getColor() { return color; }
 }
