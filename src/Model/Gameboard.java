@@ -48,6 +48,9 @@ public class Gameboard {
         squares.add(new Railroad("Pennsylvania Railroad"));
         squares.add(new Railroad("B&O Railroad"));
         squares.add(new Railroad("Short Line"));
+        squares.add(new BoardSquare("Chance Card"));
+        squares.add(new BoardSquare("Community Chest Card"));
+
 
 
     }

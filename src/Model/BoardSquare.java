@@ -1,6 +1,6 @@
 package Model;
 
-public abstract class BoardSquare {
+public class BoardSquare {
     protected String name;
 
     public BoardSquare(String name) {
