@@ -23,4 +23,11 @@ public class Player {
 
     public void payRent(Player owner, Property titleDeedCards) {
     }
+
+    public void isVisitingJail() {
+
+    }
+
+    public void sendToJail() {
+    }
 }
