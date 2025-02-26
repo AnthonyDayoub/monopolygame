@@ -1,5 +1,6 @@
 package Model;
 
+
 public class BoardSquare {
     protected String name;
 
