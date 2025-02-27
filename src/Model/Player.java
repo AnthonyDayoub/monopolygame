@@ -19,6 +19,14 @@ public class Player {
         return balance;
     }
 
+    public void deposit(int amount) {
+        balance += amount;
+    }
+
+    public void withdraw(int amount) {
+        balance -= amount;
+    }
+
     public void buyProperty(Property titleDeedCards) {
     }
 

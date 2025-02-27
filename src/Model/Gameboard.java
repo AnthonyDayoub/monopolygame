@@ -78,4 +78,14 @@ public class Gameboard {
     public void moveToken(Player player, int steps) {
         // move the token a certain number of spaces
     }
+
+    public void luxuryTax(Player player) {
+        // deduct $100 from the player's balance
+        player.withdraw(100);
+    }
+
+    public void incomeTax(Player player) {
+        // deduct $200 from the player's balance
+        player.withdraw(200);
+    }
 }
