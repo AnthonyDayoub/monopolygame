@@ -19,10 +19,16 @@ public class Player {
         return balance;
     }
 
+    /**
+     * Deposits money into the player's current balance
+     */
     public void deposit(int amount) {
         balance += amount;
     }
 
+    /**
+     * Withdraws money from the player's current balance
+     */
     public void withdraw(int amount) {
         balance -= amount;
     }

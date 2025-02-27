@@ -87,13 +87,19 @@ public class Gameboard {
         // move the token a certain number of spaces
     }
 
+    /**
+     * When a player lands on the luxuryTax BoardSquare,
+     * $100 is deducted from their player balance
+     */
     public void luxuryTax(Player player) {
-        // deduct $100 from the player's balance
         player.withdraw(100);
     }
 
+    /**
+     * When a player lands on the incomeTax BoardSquare,
+     * $200 is deducted from their player balance
+     */
     public void incomeTax(Player player) {
-        // deduct $200 from the player's balance
         player.withdraw(200);
     }
 }
