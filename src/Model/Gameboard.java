@@ -6,10 +6,12 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Gameboard {
     private List<BoardSquare> squares;
     private List<ChanceCards> chanceCards;
     private List<CommunityChestCards> communityChestCards;
+
 
     public Gameboard() {
         squares = new ArrayList<>();
