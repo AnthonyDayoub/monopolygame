@@ -37,6 +37,9 @@ public class ChanceCards {
         player.updateBalance(chanceEffect);
     }
 
+    /**
+     * This method creates the deck of Chance cards
+     */
   public void ChanceDeck() {
         chanceCards.add(new ChanceCards("Advance to Go", 200));
         chanceCards.add(new ChanceCards("Advance to Illinois Avenue", 0));
@@ -55,6 +58,10 @@ public class ChanceCards {
         chanceCards.add(new ChanceCards("Building and loan matures", 150));
 }
 
+    /**
+     * This method draws a card from the deck of Chance cards
+     * @return the description of the card drawn
+     */
     public String drawCard() {
         return chanceCards.get(random.nextInt(chanceCards.size())).getChanceDescription();
     }

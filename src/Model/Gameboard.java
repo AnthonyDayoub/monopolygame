@@ -13,6 +13,9 @@ public class Gameboard {
     private List<CommunityChestCards> communityChestCards;
 
 
+    /**
+     * Constructor for the Gameboard class
+     */
     public Gameboard() {
         squares = new ArrayList<>();
         initializeBoard();
@@ -20,7 +23,9 @@ public class Gameboard {
         this.communityChestCards = new ArrayList<>();
     }
 
-
+    /**
+     * Initializes the game board with all the squares
+     */
     private void initializeBoard() {
     squares.add(new BoardSquare("Go"));
     squares.add(new Property("Mediterranean Avenue", new Color(58, 6, 6)));
