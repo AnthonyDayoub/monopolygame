@@ -13,9 +13,6 @@ public class Gameboard {
     private List<CommunityChestCards> communityChestCards;
 
 
-    /**
-     * Constructor for the Gameboard class
-     */
     public Gameboard() {
         squares = new ArrayList<>();
         initializeBoard();
@@ -69,17 +66,14 @@ public class Gameboard {
     }
 
 
-
     public void placeChanceCard(ChanceCards card) {
 
     }
-
 
     public void placeCommunityChestCard(CommunityChestCards card) {
         // place the community chest card on the bottom of the deck
 
     }
-
 
     public void assignTokens() {
         // assign tokens to the board squares
@@ -93,19 +87,11 @@ public class Gameboard {
         // move the token a certain number of spaces
     }
 
-    /**
-     * This method is used to handle the luxury tax square on the board
-     * @param player
-     */
     public void luxuryTax(Player player) {
         // deduct $100 from the player's balance
         player.withdraw(100);
     }
 
-    /**
-     * This method is used to handle the income tax square on the board
-     * @param player
-     */
     public void incomeTax(Player player) {
         // deduct $200 from the player's balance
         player.withdraw(200);
