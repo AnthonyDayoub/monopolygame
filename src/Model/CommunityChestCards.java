@@ -10,11 +10,20 @@ public class CommunityChestCards {
     public ArrayList<CommunityChestCards> chestCards = new ArrayList<CommunityChestCards>();
     public Random random = new Random();
 
+    /**
+     * Constructor for CommunityChestCards
+     * @param description
+     * @param effect
+     */
     public CommunityChestCards(String description, int effect) {
         this.chestDescription = description;
         this.chestEffect = effect;
     }
 
+    /**
+     * Getters for CommunityChestCards
+     * @return
+     */
     public String getCommunityChestDescription() {
         return chestDescription;
     }
@@ -23,10 +32,17 @@ public class CommunityChestCards {
         return chestEffect;
     }
 
+    /**
+     * Apply the effect of the card to the player
+     * @param player
+     */
     public void applyEffect(Player player) {
         player.updateBalance(chestEffect);
     }
 
+    /**
+     * This method creates the deck of Community Chest cards
+     */
      public void CommunityChestDeck() {
         chestCards.add(new CommunityChestCards("Bank error in your favor – Collect $200", 200));
         chestCards.add(new CommunityChestCards("Doctor's fees – Pay $50", -50));
@@ -46,6 +62,10 @@ public class CommunityChestCards {
         chestCards.add(new CommunityChestCards("Advance to Go (Collect $200)", 200));
     }
 
+    /**
+     * This method draws a card from the Community Chest deck
+     * @return
+     */
     public String drawCard() {
         return chestCards.get(random.nextInt(chestCards.size())).getCommunityChestDescription();
     }

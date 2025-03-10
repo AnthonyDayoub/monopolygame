@@ -15,15 +15,24 @@ public class ChanceCards {
         this.chanceDescription = description;
         this.chanceEffect = effect;
     }
-
+    /**
+     * Returns the description of the card
+     * @return String description of the Chance Card drawn
+     */
     public String getChanceDescription() {
         return chanceDescription;
     }
-
+    /**
+     * Returns the effect of the ChanceCard
+     * @return returns the effect on the player that will occur from the chance card drawn
+     */
     public int getChanceEffect() {
         return chanceEffect;
     }
-
+    /**
+     * This applies the affect to the players balance using the player class
+     * @param player
+     */
     public void applyEffect(Player player) {
         player.updateBalance(chanceEffect);
     }
