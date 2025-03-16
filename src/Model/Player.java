@@ -6,19 +6,33 @@ import java.util.List;
 public class Player {
 
     private String name;
+    private Token token;
     private int balance;
     private List<Property> mortgagedProperties;
+    private List<Property> ownedProperties;
 
     /**
      * Constructor for the Player class
      * @param name the name of the player
      * @param balance the initial balance of the player
      */
-    public Player(String name, int balance) {
+    public Player(String name, int balance, Token token) {
         this.name = name;
         this.balance = balance;
+        this.token = token;
+        this.token.assignToPlayer(this);
         this.mortgagedProperties = new ArrayList<>();
+        this.ownedProperties = new ArrayList<>();
     }
+
+    public Token getToken() {
+        return token;
+    }
+
+    public void setToken(Token token) {
+        this.token = token;
+    }
+
 
     /**
      * Updates the player's balance by a specified amount
@@ -102,4 +116,9 @@ public class Player {
     public List<Property> getMortgagedProperties() {
         return mortgagedProperties;
     }
+
+    public List<Property> getOwnedProperties() {
+        return ownedProperties;
+    }
+
 }
