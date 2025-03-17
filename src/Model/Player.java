@@ -36,10 +36,18 @@ public class Player {
         return boardPosition;
     }
 
+    /**
+     * Gets the token for the player
+     * @return
+     */
     public Token getToken() {
         return token;
     }
 
+    /**
+     * Sets the token to the player
+     * @param Token the token to set
+     */
     public void setToken(Token token) {
         this.token = token;
     }
@@ -128,6 +136,10 @@ public class Player {
         return mortgagedProperties;
     }
 
+    /**
+     * Gets the list of owned properties for the player
+     * @return the list of owned properties
+     */
     public List<BoardSquare> getOwnedProperties() {
         return ownedProperties;
     }
