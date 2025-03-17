@@ -98,7 +98,7 @@ public class Player {
      * Mortgages a property for the player
      * @param property the property to mortgage
      */
-    public void mortgageProperty(Property property) {
+    public void mortgageProperty(BoardSquare property) {
         mortgagedProperties.add(property);
     }
 
@@ -106,7 +106,7 @@ public class Player {
      * Unmortgages a property for the player
      * @param property the property to unmortgage
      */
-    public void unmortgageProperty(Property property) {
+    public void unmortgageProperty(BoardSquare property) {
         mortgagedProperties.remove(property);
     }
 
