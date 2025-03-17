@@ -9,8 +9,8 @@ public class Player {
     private String name;
     private Token token;
     private int balance;
-    private List<Property> mortgagedProperties;
-    private List<Property> ownedProperties;
+    private List<BoardSquare> mortgagedProperties;
+    private List<BoardSquare> ownedProperties;
 
     /**
      * Constructor for the Player class
@@ -114,11 +114,11 @@ public class Player {
      * Gets the list of mortgaged properties for the player
      * @return the list of mortgaged properties
      */
-    public List<Property> getMortgagedProperties() {
+    public List<BoardSquare> getMortgagedProperties() {
         return mortgagedProperties;
     }
 
-    public List<Property> getOwnedProperties() {
+    public List<BoardSquare> getOwnedProperties() {
         return ownedProperties;
     }
 
