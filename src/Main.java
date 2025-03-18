@@ -1,4 +1,4 @@
-
+import Model.Dice;
 import Model.Player;
 import Model.Property;
 import Model.Token;
@@ -22,6 +22,11 @@ public class Main {
 
         // Update player's balance
         player.updateBalance(-200);
+
+        // Roll the dice
+        Dice dice = new Dice();
+        int rollResult = dice.roll();
+        System.out.println("Dice roll result: " + rollResult);
 
         // Print player's details
         System.out.println("Player Name: " + player.getName());
