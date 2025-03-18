@@ -6,7 +6,7 @@ public class Railroad extends BoardSquare {
      * @param name the name of the railroad
      */
     public Railroad(String name) {
-        super(name);
+        super(name, 0);
 
     }
 
