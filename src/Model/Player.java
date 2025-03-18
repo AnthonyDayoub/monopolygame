@@ -29,8 +29,8 @@ public class Player {
     }
 
     /**
-     * Gets the name of the player
-     * @return the name of the player
+     * Gets the Board Position of the player
+     * @return the Position of the player
      */
     public int getBoardPosition() {
         return boardPosition;
@@ -38,7 +38,7 @@ public class Player {
 
     /**
      * Gets the token for the player
-     * @return
+     * @return token
      */
     public Token getToken() {
         return token;
@@ -46,7 +46,7 @@ public class Player {
 
     /**
      * Sets the token to the player
-     * @param Token the token to set
+     * @param token the token to set
      */
     public void setToken(Token token) {
         this.token = token;
@@ -144,4 +144,11 @@ public class Player {
         return ownedProperties;
     }
 
+    /**
+     * Gets the name of the player
+     * @return the name of the player
+     */
+    public String getName() {
+        return name;
+    }
 }
