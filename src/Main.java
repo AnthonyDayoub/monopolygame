@@ -19,7 +19,10 @@ public class Main {
 
         Dice dice = new Dice();
         int rollResult = dice.roll();
+
         System.out.println("Dice roll result: " + rollResult);
+        System.out.println("Dice 1: " + Dice.getDie1());
+        System.out.println("Dice 2: " + Dice.getDie2());
 
         System.out.println("Player Name: " + player.getName());
         System.out.println("Player Balance: " + player.getBalance());

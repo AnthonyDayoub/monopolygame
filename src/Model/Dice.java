@@ -1,11 +1,14 @@
 package Model;
 
+import java.io.Serializable;
 import java.util.Random;
+import Exceptions.IndexOutOfBoundsException;
+
 
 public class Dice {
     private final Random random;
-    private int die1;
-    private int die2;
+    private static int die1;
+    private static int die2;
     private boolean isDouble;
     private int totalDoubles = 0;
 
@@ -21,15 +24,20 @@ public class Dice {
      * @return
      */
     public int roll() {
-        die1 = random.nextInt(6) + 1; // Generates a number between 1 and 6
-        die2 = random.nextInt(6) + 1;
-        isDouble = die1 == die2;
-        if (isDouble) {
-            totalDoubles++;
-        } else {
-            totalDoubles = 0;
+        try {
+            die1 = random.nextInt(6) + 1; // Generates a number between 1 and 6
+            die2 = random.nextInt(6) + 1;
+            isDouble = die1 == die2;
+            if (isDouble) {
+                totalDoubles++;
+            } else {
+                totalDoubles = 0;
+            }
+            return getTotal();
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Dice roll result should be between 1 and 6");
+            return 0;
         }
-        return getTotal();
     }
 
     /**
@@ -37,7 +45,12 @@ public class Dice {
      * @return the total roll value.
      */
     public int getTotal() {
-        return die1 + die2;
+        try {
+            return die1 + die2;
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Dice roll result should be between 1 and 6");
+            return 0;
+        }
     }
 
     /**
@@ -52,7 +65,7 @@ public class Dice {
      * Gets the value of the first die.
      * @return the value of die1.
      */
-    public int getDie1() {
+    public static int getDie1() {
         return die1;
     }
 
@@ -60,8 +73,21 @@ public class Dice {
      * Gets the value of the second die.
      * @return the value of die2.
      */
-    public int getDie2() {
+    public static int getDie2() {
         return die2;
     }
 
+    /**
+     * Gets the total number of doubles rolled in a row.
+     * @return the total number of doubles rolled.
+     */
+    public int getTotalDoubles() {
+        if (totalDoubles > 3) {
+            return 3;
+        } else {
+            return totalDoubles;
+        }
+
+
+    }
 }

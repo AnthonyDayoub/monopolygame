@@ -11,7 +11,7 @@ public class Property extends BoardSquare {
      * @param color the color of the property
      */
     public Property(String name, Color color) {
-        super(name);
+        super(name, 0);
         this.color = color;
     }
 

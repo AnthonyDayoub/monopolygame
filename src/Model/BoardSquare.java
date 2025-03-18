@@ -3,13 +3,17 @@ package Model;
 
 public class BoardSquare {
     protected String name;
+    protected int position;
 
     /**
      * Constructor for the BoardSquare class
+     *
      * @param name the name of the board square
+     * @param i
      */
-    public BoardSquare(String name) {
+    public BoardSquare(String name, int i) {
         this.name = name;
+        this.position = 0;
     }
 
     /**
@@ -56,5 +60,22 @@ public class BoardSquare {
     private void handleGoToJail(Player player) {
         player.sendToJail();
     }
+
+
+
+    public void setSpacePosition(int i) {
+        this.position = i;
+    }
+
+
+    public void setSpaceName(String name) {
+        this.name = name;
+    }
+
+    public int getPosition() {
+        return position;
+    }
 }
+
+
 
