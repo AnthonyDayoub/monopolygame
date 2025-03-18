@@ -19,7 +19,7 @@ public class DiceTests {
     @Test
     public void testRoll() {
         int rollResult = dice.roll();
-        assertTrue(rollResult >= 1 && rollResult <= 6, "Dice roll result should be between 1 and 6");
+        assertTrue(rollResult >= 2 && rollResult <= 12, "Roll result should be between 2 and 12");
     }
 
     /**
